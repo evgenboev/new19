@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="img/x-icon">
+    <link rel="stylesheet" href="css/text.css" />
+    <title>Road</title>
+</head>
+<body>
+
+<style>
+   body {
+    background: url(img/Road.jpg) center / cover fixed;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+    z-index: -1;
+   }
+  </style>
+
+<h3><p align="center">Story of my life!!!</p></h3>
+<section class="content">
+  <div class="link-to-back">
+      <p align="center">GOOD_LIFE!!!</p>
+      <a href="xxx.html">Back to bacK</a>    
+  </div>
+  
+  <div class="content-maps">
+      <div id="map"></div>
+  </div>
+</section>
+
+<footer>
+
+  <script>
+    function initMap() {
+      var map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: -34.397, lng: 150.644},
+        zoom: 8
+      });
+    }
+  
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGnl2dpeldbsr6Qk1Hnz48R0BIM9gUZf4&callback=initMap"
+  async defer>
+  </script>  
+</footer>
+</body>
+</html>
